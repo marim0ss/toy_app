@@ -12,7 +12,7 @@ gem 'jbuilder',     '2.6.4'
 group :development, :test do
   #gem 'sqlite3',      '1.3.13'
   gem 'sqlite3', groups: %w(test development), require: false
-  gem 'pg', groups: %w(production), require: false
+  gem 'pg', '0.21.0', groups: %w(production), require: false
   gem 'byebug', '9.0.6', platform: :mri
 end
 
