@@ -22,4 +22,7 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: pg
+  database: mydatabase
+  #database: db/production.pg １度これで記述した
+  #database: db/production.sqlite3 元あった記述
