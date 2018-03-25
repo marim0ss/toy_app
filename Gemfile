@@ -11,7 +11,7 @@ gem 'jbuilder',     '2.6.4'
 
 #developmentもtestもpg
 group :development, :test do
-  gem 'pg'
+  gem 'sqlite3'
   gem 'byebug', '9.0.6', platform: :mri
 end
 
@@ -22,5 +22,9 @@ group :development do
   gem 'spring-watcher-listen', '2.0.1'
 end
 
+#production環境
+group :production do
+  gem 'pg'
+end
 # Windows環境ではtzinfo-dataというgemを含める必要があります
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
