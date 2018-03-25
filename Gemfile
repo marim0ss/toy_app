@@ -7,12 +7,11 @@ gem 'uglifier',     '3.2.0'
 gem 'coffee-rails', '4.2.2'
 gem 'jquery-rails', '4.3.1'
 gem 'turbolinks',   '5.0.1'
-gem 'jbuilder',     '2.6.4'
+gem 'jbuilder',     '2.7.0'
 
-#developmentもtestもpg
 group :development, :test do
-  gem 'sqlite3'
-  gem 'byebug', '9.0.6', platform: :mri
+  gem 'sqlite3', '1.3.13'
+  gem 'byebug',  '9.0.6', platform: :mri
 end
 
 group :development do
@@ -22,9 +21,9 @@ group :development do
   gem 'spring-watcher-listen', '2.0.1'
 end
 
-#production環境
 group :production do
-  gem 'pg'
+  gem 'pg', '0.20.0'
 end
+
 # Windows環境ではtzinfo-dataというgemを含める必要があります
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
